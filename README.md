@@ -7,7 +7,7 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Introduction to GitHub
+# 履歷作品集
 
 _Get started using GitHub in less than an hour._
 
