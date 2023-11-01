@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#2B377A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:text="目前在車牌辨識頁面"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/Picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/upload"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic[11]" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/Capture"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/Picture"
+                            android:layout_marginTop="4dp"
+                            android:text="拍照"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                        <Button
+                            android:id="@+id/ButtonSend"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/Picture"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@+id/Capture"
+                            android:text="上傳"
+                            android:textAllCaps="false"
+                            android:textStyle="bold"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Buttonback"
+                        android:layout_gravity="right"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/Picture"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@+id/ButtonSend"
+                        android:text="回主頁"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
