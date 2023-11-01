@@ -9,7 +9,6 @@
 
 # 履歷作品集
 
-_Get started using GitHub in less than an hour._
 
 </header>
 
@@ -21,7 +20,7 @@ _Get started using GitHub in less than an hour._
   Encourage users to open new tabs for steps!
 -->
 
-## Step 1: Create a branch
+## 作品 1: 車牌辨識(Topic_PJ)
 
 _Welcome to "Introduction to GitHub"! :wave:_
 
